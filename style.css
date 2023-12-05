@@ -5,11 +5,12 @@ body {
 }
 
 .container {
-  margin: 0px 0px;
-  background-image: linear-gradient(to right bottom, #051937, #1a1e4a, #361e59, #561863, #780065);
-  rgba(20, 0, 15, 1) 100%);
+  margin: 0px;
+  background: linear-gradient(to right bottom, #051937, #1a1e4a, #361e59, #561863, #780065);
+  background-color: rgba(20, 0, 15, 1);
   min-height: 90vh;
 }
+
 
 
 
@@ -184,13 +185,14 @@ footer {
 }
 
 
-.footertext{
+.footertext {
 
   color: white;
   font-size: 1.25vw;
 
 }
-.footertext a{
+
+.footertext a {
   color: white;
 
 }
@@ -258,9 +260,9 @@ footer {
     height: 20%;
   }
 
-  .footertext{
+  .footertext {
     font-size: 2.25vw;
 
   }
-  
+
 }
