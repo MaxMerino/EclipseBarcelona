@@ -19,6 +19,7 @@ nav {
   margin: 0px;
 
   display: flex;
+  align-items: center; /* Centrar verticalmente */
   justify-content: space-between;
 }
 
@@ -201,6 +202,34 @@ footer {
   background-color: #9a9996;
 }
 
+
+.privacidad {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4vw;
+
+  margin: auto;
+  width: 50%;
+  color: white;
+
+
+}
+
+.privacidad p
+{
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 5%;
+  padding-bottom: 2%;
+}
+
+.privacidad h1,
+.privacidad h2,
+.privacidad h3{
+  text-align: center;
+  margin: 5%;
+  padding-bottom: 2%;
+}
+
 /* Estils per a smartphones */
 @media (max-width: 750px) {
 
@@ -262,6 +291,12 @@ footer {
 
   .footertext {
     font-size: 2.25vw;
+
+  }
+  .privacidad {
+    width: 75%;
+
+
 
   }
 
