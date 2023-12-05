@@ -257,4 +257,10 @@ footer {
     width: 20%;
     height: 20%;
   }
+
+  .footertext{
+    font-size: 2.25vw;
+
+  }
+  
 }
