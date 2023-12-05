@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eclipse</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="/img/LOGO_ECLIPSE.png">
+  <!-- Metadades -->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <img class="logo" src="img/logo_eclipse_nav.png" alt="Logo">
+        <ul class="menu">
+          <li><a href="index.html">
+              <p>Inicio</p>
+            </a></li>
+          <li><a href="nosotros.html">
+              <p>Nosotros</p>
+            </a></li>
+          <li><a href="eventos.html">
+              <p>Eventos</p>
+            </a></li>
+          <li><a href="contacto.html">
+              <p>Contacto</p>
+            </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 style="text-align: center; color: white;">Formulario de Contacto</h1>
+    <form>
+      <h2>Información de Contacto</h2>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+
+      <label for="phone">Teléfono:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+      <label for="contenido_mensaje">Contenido del mensaje:</label>
+      <textarea id="contenido_mensaje" name="contenido_mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí"
+        required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+
+  </div>
+  <footer>
+    <p class="textocentrado">&copy; 2023 [Eclipse]. Todos los derechos reservados.</p>
+
+    <!--
+        Marca registrada
+        Enlaces a redes sociales
+        Enlaces internos hacía páginas de especial interés
+        Logotipos o marcas de reconocido prestigio
+        Aviso legal, política de privacidad, condiciones de contratación, etc
+        Datos de contacto, donde estamos, etc
+        Menú de navegación o mapa del sitio
+    --->
+  </footer>
+</body>
+
+
+</html>
