@@ -1,9 +1,11 @@
+/* Estil del cos  */
 body {
   margin: 0px;
   background-color: black;
   font-family: Arial, sans-serif;
 }
 
+/* Estil del contenidor principal */
 .container {
   margin: 0px;
   background: linear-gradient(to right bottom, #051937, #1a1e4a, #361e59, #561863, #780065);
@@ -17,10 +19,8 @@ body {
 nav {
   background-color: black;
   margin: 0px;
-
   display: flex;
   align-items: center;
-  /* Centrar verticalmente */
   justify-content: space-between;
 }
 
@@ -237,21 +237,12 @@ footer {
   padding-bottom: 2%;
 }
 
-/* Estils per a smartphones */
-@media (max-width: 750px) {
-
-  /* Afegir estils específics per a smartphones aquí */
 
 
 
-
-
-}
-
-/* Estils per a tauletes */
+/* Estils per a tauletes i dispositius més petits com telèfons */
 @media (max-width: 1024px) {
 
-  /* Afegir estils específics per a tauletes aquí */
 
   .imagen1 {
     width: 40%;

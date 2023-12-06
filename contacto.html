@@ -1,12 +1,20 @@
 <!DOCTYPE html>
+<!-- Definim que la pàgina està en castellà -->
 <html lang="es">
 
 <head>
+  <!-- Metadades -->
+  <!-- Fem servir charset per codificar els caràcters en el format utf-8 per evitar problemes amb accents i altres símbols -->
   <meta charset="utf-8">
+  <!-- Viewport designa com el contingut s'ha de representar en dispositius mòbils -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Posem com títol de pàgina Eclipse -->
   <title>Eclipse</title>
+  <!-- Vinculem la pàgina a l'arxiu d'estils css -->
   <link href="style.css" rel="stylesheet" type="text/css">
+  <!-- Vinculem un favicon a l'imatge  -->
   <link rel="icon" type="image/x-icon" href="/img/LOGO_ECLIPSE.png">
+  <!-- Semàntica de schema en format ld-json -->
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -50,17 +58,27 @@
         }] 
       }
     </script>
+  <!-- Metadades pel SEO -->
+  <!-- Posem una descripció per millorar la cerca en un navegador -->
   <meta name="description"
     content="Eclipse, el epicentro de la vida nocturna en Barcelona! Sumérgete en un mundo de música vibrante, luces deslumbrantes y experiencias inolvidables.">
+  <!-- Fem servir la metadada de robots per controlar com s'indexa la pàgina, hem posat index i follow per que és el millor pel SEO  -->
   <meta name="robots" content="index, follow">
+  <!-- Posem unes paraules clau per facilitar la cerca en el navegador -->
   <meta name="keywords" content="Eclipse, Barcelona, Música, Nocturn, Fiesta, Club, Beach, Party">
 </head>
 
 <body>
+  <!-- En les pàgines utilitzem etiquetes semàntiques per millorar l'accessibilitat de la pàgina, el SEO i per enriquir el codi  -->
+  <!-- Contenidor principal  -->
   <div class="container">
+    <!-- Fem servir una etiqueta semàntica header -->
     <header>
+      <!-- Fem servir una etiqueta semàntica nav on posarem tot el menú de navegació de la pàgina -->
       <nav>
+        <!-- Posem una imatge -->
         <img class="logo" src="img/logo_eclipse_nav.png" alt="Logo">
+        <!-- I posem diferents enllaços a les diferents webs en una llista no ordenada -->
         <ul class="menu">
           <li><a href="index.html">
               <p>Inicio</p>
@@ -79,6 +97,7 @@
     </header>
 
     <h1 style="text-align: center; color: white;">Formulario de Contacto</h1>
+    <!-- Fem un formulari de contacte -->
     <form>
       <h2>Información de Contacto</h2>
       <label for="name_contact">Nombre:</label>
@@ -94,6 +113,7 @@
         placeholder="Escribe tu mensaje aquí" required></textarea>
       <label for="privacy_policy_contact">He leído y acepto la <a href="politica_privacidad.html">política de
           privacidad</a></label>
+      <!-- Per complir LOPD i RGPD s'ha de confirmar que l'usuari hagi llegit la política de privacitat abans d'enviar un formulari-->
       <input id="privacy_policy_contact" type="checkbox" name="privacy_policy_contact" value="privacy_policy_contact"
         required>
       <input type="submit" value="Enviar">
@@ -101,12 +121,14 @@
 
 
   </div>
+  <!-- Fem servir l'etiqueta semàntica footer pel menú inferior de la pàgina -->
   <footer>
 
     <div class="footertext">
       <p class="textocentrado">&copy; 2023 [Eclipse]. Todos los derechos reservados. <br>
         <a href="index.html">Inicio</a> <a href="nosotros.html">Nosotros</a> <a href="eventos.html">Eventos</a> <a
-          href="contacto.html">Contacto</a> <a href="politica_privacidad.html">Política de privacidad</a>
+          href="contacto.html">Contacto</a> <a href="aviso_legal.html">Aviso Legal</a> <a
+          href="politica_privacidad.html">Política de privacidad</a>
       </p>
     </div>
 
