@@ -269,7 +269,7 @@ textarea {
 més petites com els telèfons o tablets. Amb això podem fer que la pàgina encara sigui més responsive, és a dir,
 que s'adapti a totes les resolucions
 */
-/*Hem trobat que les opcions de tablets es veien bé en mòbil, per tant, utilitzem les mateixes  */
+/*Hem trobat que les opcions de tablets es veien bé en mòbil, per tant, utilitzem les mateixes   */
 @media (max-width: 1024px) {
 
   /* Canviem la mida de l'imatge de la pantalla principal */
