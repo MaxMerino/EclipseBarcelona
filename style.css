@@ -1,3 +1,8 @@
+/* Gairebé tots els estils estan escrits de forma que els seus valors no estiguin en pixels sinó que en 
+  mesures relatives com els percentatges o dependents de la pantalla com vh o vw per que sigui responsive i
+funcioni en molts dispositius diferents.
+*/
+
 /* Estil del cos  */
 body {
   margin: 0px;
@@ -15,32 +20,35 @@ body {
 
 
 
-
+/* Estil del menú de navegació  */
 nav {
   background-color: black;
   margin: 0px;
+  /* posem que el selector display sigui flex perquè s'adapti a les pantalles diferents i facilitar la tasca d'organitzar el menú */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-
+/* Estil del logotip del nav */
 .logo {
 
   width: 10%;
   height: 10%;
 }
 
-
+/* Estil de la llista d'elements del menú de navegació  */
 .menu {
+  /* posem que sigui flex perquè s'adapti a les pantalles diferents i facilitar la tasca d'organitzar el menú */
   margin: 0px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
-
+/* Estil dels enllaços del menú nav */
 .menu a {
+  /* Fem que la mida del text depengui de l'amplada de la pantalla */
   font-size: 1vw;
   text-decoration: none;
   padding-right: 6px;
@@ -52,87 +60,129 @@ nav {
 }
 
 
-
+/* Estil dels enllaços del menú nav si hi ha el ratolí al damunt */
 .menu a:hover {
   background-color: #813d9c;
 }
 
 
 
-
+/* Estil de l'imatge centrada que serà de tipus bloc i estarà centrada horitzontalment deixant un 2% de marge vertical */
 .imagen1 {
+  /*També fem que tingui una vora arrodonida  */
   border-radius: 2vw;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
+  margin: 2% auto;
   width: 30%;
 
 }
 
+/* Estil per centrar el text */
 .textocentrado {
 
   text-align: center;
   color: white;
 }
 
+/* Estil per el div que emmagatzema panells */
 .paneles {
+  /* posem que el selector display sigui flex per facilitar la tasca d'organitzar els panells */
   display: flex;
+  /* Farem que els elements vagin cap al centre */
   justify-content: center;
   margin: auto;
+  /* I reduim la mida horizontal */
   width: 85%;
+  text-align: center;
 }
 
+/* Estil pels panells que són alineats un al costat de l'altre */
 .elementoslinea {
+  /*Fem que es vegin com uns requadres arrodonits blancs amb transparència*/
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4vw;
   margin: 10px;
   flex: 1;
   color: white;
-  text-align: center;
 
 }
 
-
-.elementoslinea img {
-  max-width: 300px;
-  max-height: 300px;
-
-}
-
+/* Estil pel text dels panells */
 .elementoslinea p {
+  /* Fem que estigui justificat i posem marges*/
   text-align: justify;
   text-justify: inter-word;
   margin: 5%;
   padding-bottom: 2%;
 }
 
+/* Estil per les imatges dels panells */
 .imagenlinea {
   width: 50%;
   height: auto;
 }
 
+/* Pantalla Nosotros */
+
+/* Estil pels iframes, en aquest cas el mapa de l'ubicació */
 iframe {
+  /* Posem una vora de color blanc arrodonida */
   border: 1px solid white;
   border-radius: 5%;
   max-width: 100%;
   max-height: 100%;
 }
 
+/* Estil per les taules, en aquest cas la taula d'horaris */
 table {
   margin: auto;
   width: 50%;
   height: 50%;
 }
 
+/* Estil pels elements de la taula i també especifiquem per la taula */
 table,
 th,
 td {
+  /* Posem vores de color blanc */
   border: 1px solid white;
   border-collapse: collapse;
 }
 
+/* Pantalla events */
+
+
+/*Estil pel div que emmagatzema les fotos dels events  */
+.eventos {
+  display: flex;
+  justify-content: center;
+}
+
+/*Estil per les imatges dels events */
+.eventos img {
+  margin: 10px;
+  width: 15%;
+  height: 15%;
+  border-radius: 25%;
+
+
+}
+
+/*Estil pel div que emmagatzema els forms de les entrades i vip*/
+.panelesentradas {
+  display: flex;
+  justify-content: center;
+}
+
+/*Estil pels formularis de entrades i vip  */
+.panelesentradas form {
+  /* Posem un espai entre ens dos forms */
+  margin: 0 10px;
+}
+
+/* Estil pels formularis de la web*/
 form {
+  /*Aquests estan estilitzats de forma molt similar als panells, requadres amb transparència */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   margin: auto;
@@ -144,14 +194,16 @@ form {
 }
 
 
-
+/*Estil per label, input i select */
 label,
 input,
 select {
+  /* Un està sota l'altre deixant 10 px de marge */
   display: block;
   margin-bottom: 10px;
 }
 
+/*Estil per centrar input, select i textarea  */
 input,
 select,
 textarea {
@@ -160,61 +212,30 @@ textarea {
   width: 75%;
 }
 
-.eventos {
-  display: flex;
-  justify-content: center;
-}
 
 
-.eventos img {
-  margin: 0 10px;
-  width: 15%;
-  height: 15%;
-  border-radius: 25%;
-
-
-}
-
-.eventos img:hover {
-  box-shadow: 0px 10px 5px black;
-
-}
-
-.panelesentradas {
-  display: flex;
-  justify-content: center;
-}
-
-.panelesentradas form {
-  margin: 0 10px;
-}
-
-footer {
-  background-color: black;
-}
-
-
-.footertext {
-
-  color: white;
-
-
-}
-
+/* Estil pel text i enllaços del menu inferior, el footer */
+.footertext,
 .footertext a {
+
   color: white;
+
 
 }
 
+/* Estil pels enllaços del menu inferior, si el ratolí passa per damunt */
 .footertext a:hover {
   background-color: #9a9996;
 }
 
 
+/*Pantalles Avís legal i política de privacitat  */
+
+/* Estil pel div que emmagatzema el text d'aquestes dues pàgines */
 .privacidad {
+  /*És un panell amb transparència arrodonit com els altres panells i també està centrat  */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4vw;
-
   margin: auto;
   width: 50%;
   color: white;
@@ -222,32 +243,42 @@ footer {
 
 }
 
+/*Estil pel text de les dues pàgines  */
 .privacidad p {
+  /*És un text justificat  */
   text-align: justify;
   text-justify: inter-word;
   margin: 5%;
   padding-bottom: 2%;
 }
 
+/*Estil pels diferents headers de les dues pàgines  */
 .privacidad h1,
 .privacidad h2,
 .privacidad h3 {
+  /*Els centrem i deixem marges  */
   text-align: center;
   margin: 5%;
-  padding-bottom: 2%;
+
 }
 
 
 
 
-/* Estils per a tauletes i dispositius més petits com telèfons */
+/* Fem servir la regla media per canviar alguns selectors i opcions pels dispositius amb pantalles
+més petites com els telèfons o tablets. Amb això podem fer que la pàgina encara sigui més responsive, és a dir,
+que s'adapti a totes les resolucions
+*/
+/*Hem trobat que les opcions de tablets es veien bé en mòbil, per tant, utilitzem les mateixes  */
 @media (max-width: 1024px) {
 
-
+  /* Canviem la mida de l'imatge de la pantalla principal */
   .imagen1 {
     width: 40%;
   }
 
+  /* Pel que fa als panells dels formularis ja no estan un al costat de l'altre, fem servir el selector display i ho canviem a block perquè un panell estigui sota l'altre
+  */
   .eventos,
   .panelesentradas {
     display: block;
@@ -255,55 +286,43 @@ footer {
 
   }
 
+  .panelesentradas form {
+    margin: 10px auto;
+  }
 
+  /* Amb les imatges dels events fem igual que els panells dels formularis */
   .eventos img {
     display: block;
     margin: 10px auto;
     width: 50%;
     border-radius: 25%;
 
-
   }
 
 
 
-  .panelesentradas form {
-    margin: 10px auto;
-  }
-
-
+  /* Fem el mateix amb els panells de les altres pàgines */
   .paneles {
     display: block;
     width: 75%;
   }
 
-  .elementoslinea {
-    display: block;
-    width: 100%;
-    height: 33%;
-  }
-
-  .menu a {
+  /* Canviem la mida del text del menú de navegació perquè sigui més gran */
+  .menu a,
+  footertext {
     font-size: 3vw;
   }
 
-
+  /* També canviem la mida del logotip */
   .logo {
 
     width: 20%;
     height: 20%;
   }
 
-  .footertext {
-    font-size: 2.25vw;
-
-  }
-
+  /* I finalment canviem l'amplada del panell de text de política de privacitat i avís legal perque ocupi tot el div de paneles */
   .privacidad {
-    width: 75%;
-
-
-
+    width: 100%;
   }
 
 }
